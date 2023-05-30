@@ -1,7 +1,7 @@
 # 1).
 import random
 
-n=int(input('введите колличество элементов в массиве от 1 до 5 : '))
+n=int(input('введите колличество элементов в массиве от 1 до 10 : '))
 num_list=[0]*n
 num_list1=[]
 search= int(input('введите искомое число: '))
@@ -22,7 +22,7 @@ num_list=[0]*n
 for index in range(n):
     num_list[index]=random.randint(0,10)
 print(num_list)
-search= int(input('введите искомое число от 1 до 5: '))
+search= int(input('введите искомое число от 1 до 10: '))
 
 num_list1=[count for count in num_list if count>search]
 num_list2=[count for count in num_list if count<search]
